@@ -19,7 +19,6 @@ proj
     |   |---- package21
 
 
-
 --------------------------------------------------------------------
 2. java file structure
 --------------------------------------------------------------------
@@ -98,6 +97,7 @@ in java, we have 4 user defined types
 2. interface
 3. enum
 4. annotation
+5. record ( java 14 ) => to create immutable objects with less code
 
 why user defined types ?
     => to represent data
