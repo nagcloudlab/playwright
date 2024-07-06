@@ -1,7 +1,7 @@
 
 
 => Java Envi : JDK + JRE
-=> HelloWord App
+=> HelloWord com.example.App
 
 
 --------------------------------------------------------------------
@@ -47,9 +47,7 @@ syntax:
 package com.abc.xyz;
 
 recommended package naming conventions:
-    
-    => domain name  + project name + module name + sub module name
-
+    domain name  + project name + module name + sub module name
     eg: com.edforce.testing.playwright;
 
 
@@ -104,7 +102,7 @@ why user defined types ?
     => to represent behavior
     => to represent data + behavior
 
-important note: java is object oriented language
+important note: java is object-oriented language
 
 what is object ?
 

@@ -75,14 +75,15 @@ class Playwright implements AutoCloseable {
     }
     public void useBrowser() {
         // use browser
-        throw  new RuntimeException("Browser crashed");
+        ///throw  new RuntimeException("Browser crashed");
     }
     public void close() {
         // close browser
+        System.out.println("Browser closed");
     }
 }
 
-public class ExceptionHandling {
+public class Exception {
     public static void main(String[] args) {
 
         TransferService transferService = new TransferService();
@@ -97,18 +98,18 @@ public class ExceptionHandling {
         }
 
 
-        Playwright playwright = new Playwright();
-        try {
-            playwright.init();
-            playwright.useBrowser();
-        }
-        catch (RuntimeException e) {
-            e.printStackTrace();
-        }
-        finally {
-            // cleanup
-            playwright.close();
-        }
+//        Playwright playwright = new Playwright();
+//        try {
+//            playwright.init();
+//            playwright.useBrowser();
+//        }
+//        catch (RuntimeException e) {
+//            e.printStackTrace();
+//        }
+//        finally {
+//            // cleanup
+//            playwright.close();
+//        }
 
         // try with resources (Java 7)
 

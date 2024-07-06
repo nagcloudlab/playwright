@@ -16,22 +16,7 @@ public class PrimitiveTypes {
         char charValue3 = '\u0041'; // 16 bits
         boolean booleanValue = true;  // 1 bit
 
-        System.out.println("byteValue: " + byteValue);
-        System.out.println("shortValue: " + shortValue);
-        System.out.println("intValue: " + intValue);
-        System.out.println("longValue: " + longValue);
-        System.out.println("floatValue: " + floatValue);
-        System.out.println("doubleValue: " + doubleValue);
-        System.out.println("charValue: " + charValue1);
-        System.out.println("charValue: " + charValue2);
-        System.out.println("charValue: " + charValue3);
-        System.out.println("booleanValue: " + booleanValue);
-
-
         long largeAmount = 100_000_000;
-        System.out.println("amount: " + largeAmount);
-
-
 
 
     }
