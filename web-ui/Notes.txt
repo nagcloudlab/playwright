@@ -1,0 +1,22 @@
+
+
+UI = data + style + behavior
+Web UI = HTML + CSS + javascript
+
+-----------------------------------------
+
+why we need javascript with HTML page ?
+
+javascript programs using browser's Apis,
+brings magic to HTML-page
+
+browser's Apis:
+e.g DOM,Timer,XHR,Fetch,....
+
+-> to make the dynamic web page
+-> to execute actions on timeout/interval
+-> to validate the form data
+-> to make the async http request
+...
+
+-----------------------------------------
