@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="container">
+
+    <div class="display-1">Web UI calculator</div>
+    <hr />
+
+    <div class="card">
+        <div class="card-header">
+            <h5>Calculator</h5>
+        </div>
+        <div class="card-body">
+            <form action="calculate.php" method="post">
+                <div class="mb-3">
+                    <label for="num1" class="form-label">Number 1</label>
+                    <input type="number" class="form-control" id="num1" name="num1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="num2" class="form-label">Number 2</label>
+                    <input type="number" class="form-control" id="num2" name="num2" required>
+                </div>
+                <div class="mb-3">
+                    <label for="operation" class="form-label">Operation</label>
+                    <select class="form-select" id="operation" name="operation" required>
+                        <option value="add">Add</option>
+                        <option value="subtract">Subtract</option>
+                        <option value="multiply">Multiply</option>
+                        <option value="divide">Divide</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Calculate</button>
+                <span id="result"></span>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('num1').focus();
+
+
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const num1 = Number.parseInt(document.getElementById('num1').value);
+            const num2 = Number.parseInt(document.getElementById('num2').value);
+            const operation = document.getElementById('operation').value;
+            let result = 0;
+            switch (operation) {
+                case 'add':
+                    result = num1 + num2;
+                    break;
+                case 'subtract':
+                    result = num1 + num2;
+                    break;
+                case 'multiply':
+                    result = num1 * num2;
+                    break;
+                case 'divide':
+                    result = num1 / num2;
+                    break;
+                default:
+                    result = 0;
+                    break;
+            }
+            document.getElementById('result').innerText = `Result: ${result}`;
+        });
+
+    </script>
+
+</body>
+
+</html>
